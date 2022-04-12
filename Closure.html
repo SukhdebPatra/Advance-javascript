@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Closure in JavaScript</h1>
+    <h1>closure is action that is inner function can have access to the outer function variable / parameter as well as all the globel variable.. </h1>
+    <script>
+
+        
+        const outerFun=(a)=>{
+            let b=10;
+            const innerFunc=()=>{
+                let sum=a+b;
+                console.log(`the sum of two no is ${sum}..`)
+            }
+            innerFunc();
+
+
+        }
+        outerFun(5);
+    </script>
+  </body>
+</html>

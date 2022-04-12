@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Imidaiate invoke function</h1>
+    <h1>That run as soon as it is defiend . it will call automatically</h1>
+    <script>
+      function authorName() {
+        console.log("author name is sukhdeb");
+      }
+      authorName();
+// () this is groping oprartor
+      (function (){
+          var aName="sukhdeb"
+          console.log('this is author ' + aName)
+      })();
+    </script>
+  </body>
+</html>
